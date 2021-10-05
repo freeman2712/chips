@@ -14,7 +14,7 @@ int main(int argc, char** argv)
     }
     const char* filename = argv[1];
     FILE* f = fopen(filename, "rb");
-    if(f == NULL)   printf("fuck");
+    if(f == NULL)   printf("File cannot be opened. ERROR.");
     fseek(f, 0L, SEEK_END);    
     int fsize = ftell(f);    
     fseek(f, 0L, SEEK_SET);
